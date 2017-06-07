@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="search-icon-wrapper" id="searchBtn">
+        <i class="iconfont search-icon">搜花</i>
+    </div>
+    <div class="header">
+        <div class="bg">
+            <img id="bgPic" src="" width="100%" height="100%">
+        </div>
+        <div class="avatar-wrapper">
+            <img class="avatar" id="companyHeadIcon" src="./images/default_avatar.png" width="60" height="60">
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="title">
+                    <span class="tag factory" id="typeTag"></span><span class="name" id="companyName">
+                    <!-- 福建坐视布管网络科技有限公司福建坐视布管网络科技有限公司 -->
+                    </span>
+                </div>
+                <div class="desc" id="companyBusiness">
+                  <!-- 主营：面料、大边、小边、睫毛 -->
+                </div>
+            </div>
+            <div class="star-wrapper">
+                <div>
+                    <div class="star">
+                        <i class="iconfont icon-star"></i>
+                        <span class="text">收藏</span>
+                    </div>
+                    <div class="pageview">
+                        <div class="text"><span class="number" id="viewCount"></span>访问量</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主题区域 -->
+    <div class="main">
+        <div class="tab border-bottom">
+            <div class="tab-item active">
+                <span class="text">全部花型</span>
+            </div>
+            <div class="tab-item">
+                <span class="text">厂家供应</span>
+            </div>
+        </div>
+        <div class="swiper-container" id="content" style="width:100%">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide left" id="wrapper1">
+                    <div id="wrapper1Div">
+                        <div class="type" id="hotPatterns">
+                            <div class="name border-bottom">爆款</div>
+                            <div class="patterns-spec-wrapper">
+                                <div class="patterns" id="top1" data-id="">
+                                    <div class="img" id="top1Img">
+                                        <p class="price" id="top1Price">￥10/码</p>
+                                    </div>
+                                    <div class="rank-tag">
+                                        <div class="top">TOP</div>
+                                        <div class="number">1</div>
+                                    </div>
+                                </div>
+
+                                <div class="right-patterns" id="rightHotPatternsWrapper">
+                                    <div class="patterns" id="top2" data-id="">
+                                        <div class="img" id="top2Img">
+                                            <p class="price" id="top2Price">￥10/码</p>
+                                        </div>
+                                        <div class="rank-tag">
+                                            <div class="top">TOP</div>
+                                            <div class="number">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="patterns" id="top3" data-id="">
+                                        <div class="img" id="top3Img">
+                                        
+                                            <p class="price" id="top3Price">￥10/码</p>
+                                            <p class="color"></p>
+                                        </div>
+                                        <div class="rank-tag">
+                                            <div class="top">TOP</div>
+                                            <div class="number">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="type" id="newPatterns">
+                            <div class="name border-bottom">新品</div>
+                            <div class="patterns-wrapper clearfix">
+                                <!-- <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">价格面议</p>
+                                </div>
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="type" >
+                            <div class="name border-bottom">压纱板</div>
+                            <div class="patterns-wrapper clearfix">
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">价格面议</p>
+                                </div>
+
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+                                <div class="patterns">
+                                    <div class="img"></div>
+                                    <p class="number">#20001</p>
+                                    <p class="price">￥10/码</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seemore border-bottom">
+                            查看更多压纱板
+                        </div> -->
+
+                        <div id="spliter"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide right" id="wrapper2">
+                    <div id="wrapper2Div">
+                        <!-- <div class="supply-list">
+                            <div class="img-wrapper">
+                                <img class="img" src="../src/images/patterns2.png">
+                            </div>
+                            <div class="content">
+                                <h1 class="title">大量供应这款面料，要的速度大量供应这款面料，要的速度</h1>
+                                <span class="type">成品</span>
+                                <span class="time">2017-03-05</span>
+                                <i class="iconfont icon-back"></i>
+                            </div>
+                        </div>
+                        <div class="supply-list">
+                            <div class="img-wrapper">
+                            </div>
+                            <div class="content clearfix">
+                                <h1 class="title">d大量供应这款面料，要的速度大量供应这款面料，很长的标题很长的标题很长的标题很长的标题很长的标题很长的标题很长的标题很长的标题。要的速度大量供应这款面料</h1>
+                                <span class="type">成品</span>
+                                <span class="time">2017-03-05</span>
+                                <i class="iconfont icon-back"></i>
+                            </div>
+                        </div>
+                        <div class="supply-list">
+                            <div class="img-wrapper">
+                            </div>
+                            <div class="content">
+                                <h1 class="title">一个短的标题一个短的标题一个短的标题</h1>
+                                <span class="type">成品</span>
+                                <span class="time">2017-03-05</span>
+                                <i class="iconfont icon-back"></i>
+                            </div>
+                        </div>
+                        <div class="supply-list">
+                            <div class="img-wrapper">
+                            </div>
+                            <div class="content">
+                                <h1 class="title">标题</h1>
+                                <span class="type">胚布</span>
+                                <span class="time">2017-03-05</span>
+                                <i class="iconfont icon-back"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="more-button" link="./all_supply.html">
+                            查看全部
+                        </div>
+                    
+                        <br>
+                        <br> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer border-top">
+        <div class="footer-item" id="patternsClassfiy"><i class="iconfont icon-fenlei"></i><span>花型分类</span></div>
+        <div class="footer-item" link="./introduce.html"><i class="iconfont icon-icon-yxj-empty-store"></i><span>厂家介绍</span></div>
+        <div class="footer-item" tel="18650470415"><i class="iconfont icon-iconfontdianhua"></i><span>联系厂家</span></div>
+    </div>
+</body>
+</html>
